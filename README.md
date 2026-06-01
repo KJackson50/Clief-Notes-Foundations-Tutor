@@ -1,6 +1,6 @@
 # Foundation Companion
 
-Foundation Companion walks you through Jake Van Clief's 11 Foundation lessons from his Skool community by having you build each concept in Claude Code as you go. Instead of reading, you do.
+Foundation Companion walks you through Jake Van Clief's 11 Foundation lessons from his Skool community by having you build each concept in Codex as you go. Instead of reading, you do.
 
 For Clief Notes Skool forum members who've tried the Foundation lessons and want a more hands-on walkthrough.
 
@@ -17,10 +17,10 @@ Two things, in your own words:
 
 ## What you need first
 
-- A **Claude Pro or Max** account (free tier won't cover Claude Code).
-- **Claude Code** installed on your machine.
+- A **ChatGPT plan with Codex access**. OpenAI recommends signing in with ChatGPT Plus, Pro, Business, Edu, or Enterprise.
+- **Codex CLI** installed on your machine.
 
-If you don't have Claude Code yet, the install steps are below.
+If you don't have Codex CLI yet, the install steps are below.
 
 ---
 
@@ -28,56 +28,43 @@ If you don't have Claude Code yet, the install steps are below.
 
 ### macOS
 
-1. Download Claude Code from [claude.ai/download](https://claude.ai/download). Choose the macOS version.
-2. Open the installer and follow the prompts.
-3. Sign in with your Anthropic account when Claude Code launches.
-4. Verify it worked: open Terminal and type `claude --version`. If you see a version number, you're good.
+1. Open Terminal.
+2. Run `curl -fsSL https://chatgpt.com/codex/install.sh | sh`.
+3. Type `codex` and press Enter.
+4. Choose **Sign in with ChatGPT** when Codex launches.
+5. Verify it worked: open Terminal and type `codex --version`. If you see a version number, you're good.
 
-If `claude` isn't found after install, close Terminal completely and reopen it.
+If `codex` isn't found after install, close Terminal completely and reopen it.
 
 ### Windows
 
-Before you download anything, check your system architecture.
+Codex CLI runs on Windows through WSL2.
 
-1. Open Settings → System → About.
-2. Look for "System type." It will say something like "64-bit operating system, x64-based processor" or "ARM-based processor."
-3. Note which one you have — x64 or ARM64. You need the matching installer. Installing the wrong one causes problems that are hard to diagnose.
+1. Install WSL2 if you do not already have it.
+2. Open your WSL terminal.
+3. Run `curl -fsSL https://chatgpt.com/codex/install.sh | sh`.
+4. Type `codex` and press Enter.
+5. Choose **Sign in with ChatGPT** when Codex launches.
+6. Verify it worked: type `codex --version`. If you see a version number, you're good.
 
-Then:
+### Alternative install methods
 
-4. Download Claude Code from [claude.ai/download](https://claude.ai/download). Choose the version that matches your architecture.
-5. Run the installer and follow the prompts.
-6. Sign in with your Anthropic account when Claude Code launches.
-7. Verify it worked: open PowerShell or Command Prompt and type `claude --version`. If you see a version number, you're good.
-
-> Why the architecture check matters: x64 and ARM64 are different processor types. The wrong installer may appear to work but will fail in subtle ways. Always check before downloading.
+You can also install Codex CLI with `npm install -g @openai/codex` or `brew install --cask codex`.
 
 ---
 
-## How to open this repo in Claude Code
+## How to open this repo in Codex
 
 First, get the repo. Either clone it with git (`git clone https://github.com/donroy26/Clief-Notes-Foundations-Tutor.git`) or download the ZIP from GitHub and unzip it somewhere you can find it.
 
 Then open it. Pick whichever of these matches how you work:
 
-**Claude Desktop app**
-1. Open Claude Desktop.
-2. Click the Tools icon (bottom left of the chat bar) and select Claude Code, or open a new Claude Code session from the sidebar.
-3. Use the folder icon to open the Foundation Companion folder.
-4. Say "hi" or "let's go."
-
-**VS Code**
-1. Open VS Code.
-2. File → Open Folder, then select the Foundation Companion folder.
-3. Open the Claude Code panel (the sidebar icon or `Ctrl+Shift+P` → Claude Code).
-4. Say "hi" or "let's go."
-
 **Terminal**
 1. `cd` into the Foundation Companion folder.
-2. Type `claude` and press Enter.
+2. Type `codex` and press Enter.
 3. Say "hi" or "let's go."
 
-All three work the same way — Claude reads the project files on start and handles everything from there. You don't need to open any other files or do any setup.
+Codex reads `AGENTS.md` on start and handles everything from there. You don't need to open any other files or do any setup.
 
 ---
 

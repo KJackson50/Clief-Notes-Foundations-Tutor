@@ -6,17 +6,17 @@
 
 What You'll Get From This
 
-A working folder that changes how Claude responds to you. Three files. Five minutes. You will see the difference immediately.
+A working folder that changes how Codex responds to you. Three files. Five minutes. You will see the difference immediately.
 
 
 
 The Lesson
 
-Right now, most people open Claude, type a question, and start over every time. Every conversation begins from zero. You spend half the message explaining who you are, what you are working on, and what you need. Then you hit the token limit, start a new chat, and do it all again.
+Right now, most people open Codex, type a question, and start over every time. Every conversation begins from zero. You spend half the message explaining who you are, what you are working on, and what you need. Then you hit the token limit, start a new chat, and do it all again.
 
 The folder fixes that.
 
-You give Claude a small set of files. Those files tell it who you are, what the project is, and what good work looks like. Claude reads them and its responses change. You will notice it in the first message.
+You give Codex a small set of files. Those files tell it who you are, what the project is, and what good work looks like. Codex reads them and its responses change. You will notice it in the first message.
 
 This is the quick version. We are getting you a win right now. If you want to understand why this works (context windows, tokens, routing, the full architecture), that is all shown and explained in Section 3. You do not need any of that to start. You just need three files.
 
@@ -35,9 +35,9 @@ Step 2: Create Three Files
 
 Inside that folder, create three files. Use .md (markdown) if you can. Plain .txt works too.
 
-File 1: CLAUDE.md
+File 1: AGENTS.md
 
-This tells Claude who it is working for and how to behave.
+This tells Codex who it is working for and how to behave.
 
 # Identity
 
@@ -53,7 +53,7 @@ Replace the brackets with your info. Keep it short.
 
 File 2: CONTEXT.md
 
-This tells Claude what you are working on right now.
+This tells Codex what you are working on right now.
 
 # Current Project
 
@@ -69,7 +69,7 @@ This tells Claude what you are working on right now.
 
 File 3: REFERENCES.md
 
-Background material. Examples, links, notes, anything Claude should know about but does not need to act on directly.
+Background material. Examples, links, notes, anything Codex should know about but does not need to act on directly.
 
 # References
 
@@ -80,26 +80,26 @@ Background material. Examples, links, notes, anything Claude should know about b
 [URLs, docs, resources for this project]
 
 ## Notes
-[Anything else Claude should know]
+[Anything else Codex should know]
 
 
 That is it. Three files.
 
 
 
-Step 3: Point Claude At It
+Step 3: Point Codex At It
 
-If you are using Claude Code (terminal): Navigate to the folder, type claude. It reads the files automatically.
+If you are using Codex (terminal): Navigate to the folder, type codex. It reads the files automatically.
 
 cd my-first-workspace
-claude
+codex
 
 
 Ask it something about your project. Notice how different the response is.
 
-If you are using Claude in the browser (claude.ai): Two options:
+If you are using ChatGPT in the browser (chatgpt.com): Two options:
 
-Projects: Create a Project, upload your three files as Project Knowledge, and start a conversation inside that Project. Claude references them in every message.
+Projects: Create a Project, upload your three files as Project Knowledge, and start a conversation inside that Project. ChatGPT references them in every message.
 
 Copy and paste: Copy the contents of all three files and paste them at the top of your first message. Less elegant. Works fine.
 
@@ -107,7 +107,7 @@ Copy and paste: Copy the contents of all three files and paste them at the top o
 
 Step 4: See The Difference
 
-Ask Claude something related to your project. Compare what you get now versus what you would have gotten cold.
+Ask Codex something related to your project. Compare what you get now versus what you would have gotten cold.
 
 The response should feel more specific, more relevant, more like talking to someone who already knows what you are working on. Because now it does.
 
@@ -115,9 +115,9 @@ The response should feel more specific, more relevant, more like talking to some
 
 What just happened?
 
-You gave Claude three things it never has in a normal chat: who you are, what the project is, and what good looks like. That is the whole idea. The files carry context so you do not have to re-explain it every time.
+You gave Codex three things it never has in a normal chat: who you are, what the project is, and what good looks like. That is the whole idea. The files carry context so you do not have to re-explain it every time.
 
-You can edit these files whenever your project changes. You can add more files when you need Claude to know more. You can create separate folders for separate projects. The system grows with you.
+You can edit these files whenever your project changes. You can add more files when you need Codex to know more. You can create separate folders for separate projects. The system grows with you.
 
 This is the starting point. There is a full architecture underneath this (three layers, routing tables, naming conventions, production pipelines) and it is all covered in Section 3 when you are ready for it. But everything in Section 3 builds on what you just did. These three files are the foundation.
 
@@ -125,9 +125,9 @@ This is the starting point. There is a full architecture underneath this (three 
 
 ## Build
 
-<!-- Runtime instructions for Claude — not prose delivered to the user -->
+<!-- Runtime instructions for Codex — not prose delivered to the user -->
 
-Important: all build artifacts for every lesson go INSIDE this Foundation Companion folder — the one the user has open in Claude Code right now. Never send the user to create things elsewhere on their machine. This keeps everything visible in the sidebar, inspectable by you, and tracked in progress.md with paths that actually resolve.
+Important: all build artifacts for every lesson go INSIDE this Foundation Companion folder — the one the user has open in Codex right now. Never send the user to create things elsewhere on their machine. This keeps everything visible in the sidebar, inspectable by you, and tracked in progress.md with paths that actually resolve.
 
 Walk the user through these steps one at a time. Wait for "done" after each step before continuing.
 
@@ -135,8 +135,8 @@ Walk the user through these steps one at a time. Wait for "done" after each step
 - Instruction: "We're going to build your practice workspace right here inside the Foundation Companion folder — so it stays visible in your sidebar and I can inspect your work throughout all 11 lessons. Create a new folder here, at the root of this project. Name it after whatever you're actually working on right now. Something like `my-blog`, `client-work`, or `dev-projects` — whatever fits. Tell me when it's there and what you named it."
 - Inspect: Use your file tools to confirm the folder exists at the repo root (e.g., `my-blog/` or whatever they named it). If you can't see it, ask them to confirm the path.
 
-**Step 2: Create CLAUDE.md inside the folder.**
-- Instruction: "Good. Now create a file called CLAUDE.md inside that folder. Here's the starter content — replace the brackets with your actual name and what you do, then save it:
+**Step 2: Create AGENTS.md inside the folder.**
+- Instruction: "Good. Now create a file called AGENTS.md inside that folder. Here's the starter content — replace the brackets with your actual name and what you do, then save it:
 
 ```
 # Identity
@@ -152,29 +152,29 @@ You are helping [YOUR NAME] with [WHAT YOU DO].
 Tell me when it's saved."
 - Inspect: Ask them to read back what's in the file. Verify it has their actual name and role filled in (not the placeholder text).
 
-**Step 3: Verify Claude can see it.**
-- Instruction: "Open the CLAUDE.md in your editor (click it in the sidebar) and read back the first two lines. I want to confirm it's exactly what you saved."
-- Inspect: Read the file at `[user-named-folder]/CLAUDE.md` using your file tools. Confirm the content matches what they reported — specifically that they replaced the bracket placeholders with their actual name and role.
+**Step 3: Verify Codex can see it.**
+- Instruction: "Open the AGENTS.md in your editor (click it in the sidebar) and read back the first two lines. I want to confirm it's exactly what you saved."
+- Inspect: Read the file at `[user-named-folder]/AGENTS.md` using your file tools. Confirm the content matches what they reported — specifically that they replaced the bracket placeholders with their actual name and role.
 
-**Artifact:** `[user-named-folder]/CLAUDE.md`
-(where `[user-named-folder]` is the name they chose, e.g., `my-blog/CLAUDE.md` — always a direct child of the Foundation Companion root)
+**Artifact:** `[user-named-folder]/AGENTS.md`
+(where `[user-named-folder]` is the name they chose, e.g., `my-blog/AGENTS.md` — always a direct child of the Foundation Companion root)
 
-Note: The lesson source also shows CONTEXT.md and REFERENCES.md. Walk the user through creating those too if time allows, but CLAUDE.md is the required artifact for the Check-in.
+Note: The lesson source also shows CONTEXT.md and REFERENCES.md. Walk the user through creating those too if time allows, but AGENTS.md is the required artifact for the Check-in.
 
 ---
 
 ## Check-in
 
-<!-- Runtime instructions for Claude -->
+<!-- Runtime instructions for Codex -->
 
-1. Inspect `[user-named-folder]/CLAUDE.md` — verify it has the correct structure (# Identity heading, their actual name and role, ## Rules section). It should not still have placeholder text.
+1. Inspect `[user-named-folder]/AGENTS.md` — verify it has the correct structure (# Identity heading, their actual name and role, ## Rules section). It should not still have placeholder text.
 
-2. Ask: "If you were setting this up for a completely different project tomorrow — something you're actually working on — what would you put in the CLAUDE.md? Walk me through it."
+2. Ask: "If you were setting this up for a completely different project tomorrow — something you're actually working on — what would you put in the AGENTS.md? Walk me through it."
 
 3. Record in `_tutor/progress.md`:
    - lesson: "01_first-folder"
-   - artifacts_inspected: ["[user-named-folder]/CLAUDE.md"]
-   - comprehension.question: "If you were setting this up for a completely different project tomorrow, what would you put in the CLAUDE.md? Walk me through it."
+   - artifacts_inspected: ["[user-named-folder]/AGENTS.md"]
+   - comprehension.question: "If you were setting this up for a completely different project tomorrow, what would you put in the AGENTS.md? Walk me through it."
    - comprehension.answer: "[user's verbatim response]"
    - comprehension.pass: [true/false]
 

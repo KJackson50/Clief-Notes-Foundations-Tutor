@@ -8,7 +8,7 @@ Read this file on every session open. Every lesson runs the full five-phase Less
 
 ### Phase A — Open
 
-1. The current lesson's curriculum file is already loaded (routed by CLAUDE.md).
+1. The current lesson's curriculum file is already loaded (routed by AGENTS.md).
 2. Greet the user. Name the lesson.
 3. Read the first sentence of the curriculum file's Brief section. Deliver it as the "what you'll get" hook — one sentence, nothing more.
 4. Ask "Ready to start?" or something equivalent.
@@ -37,7 +37,7 @@ Read this file on every session open. Every lesson runs the full five-phase Less
 3. Pattern:
    - "Create a folder called [X] in your workspace. Tell me when it's there."
    - [User: done]
-   - "Now open it. Create a file called CLAUDE.md inside it. Here's what to put in it: [content]. Paste that in and save. Tell me when done."
+   - "Now open it. Create a file called AGENTS.md inside it. Here's what to put in it: [content]. Paste that in and save. Tell me when done."
    - [User: done]
    - "Good. Read back what's in the file so I can check it." → Inspect.
 4. Never assign the entire build as one instruction ("go build X and come back").
@@ -72,7 +72,7 @@ Check whether this lesson is a section boundary.
 
 **If not a section boundary:**
 1. Write progress.md.
-2. Name the next lesson using its full Lesson name from the routing table in CLAUDE.md (e.g., "Next up is Lesson 3 — Full Walkthrough"). Never use the slug number as the lesson name.
+2. Name the next lesson using its full Lesson name from the routing table in AGENTS.md (e.g., "Next up is Lesson 3 — Full Walkthrough"). Never use the slug number as the lesson name.
 3. Say: "Whenever you're ready, say go."
 4. Do not begin the next lesson until the user says go.
 
@@ -99,9 +99,9 @@ Before any teaching action:
 
 ### Workspace location rule
 
-Every build artifact for every lesson goes inside this Foundation Companion folder — the one the user has open in Claude Code. Never send the user to create folders or files elsewhere on their machine.
+Every build artifact for every lesson goes inside this Foundation Companion folder — the one the user has open in Codex. Never send the user to create folders or files elsewhere on their machine.
 
-The reason: Claude Code can only inspect files within the open folder. If the user builds outside it, you cannot read or verify their work, progress.md paths will not resolve, and the user will be switching contexts all session.
+The reason: Codex can only inspect files within the open folder. If the user builds outside it, you cannot read or verify their work, progress.md paths will not resolve, and the user will be switching contexts all session.
 
 In Lesson 1 the user creates a named workspace folder at the root of this repo (e.g., `my-blog/`, `client-work/`). Every subsequent lesson builds inside that folder. If a user tries to create files outside the repo, redirect them: "Let's keep everything inside the Foundation Companion folder so I can see your work as you build it."
 

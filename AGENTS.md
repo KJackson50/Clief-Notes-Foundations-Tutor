@@ -20,9 +20,9 @@ This repo walks Jake Skool forum members through 11 Foundation lessons hands-on.
 | `04_customize` | Lesson 4 — Customizing for Your Use Case | `_tutor/curriculum/04_customize.md` |
 | `05_common-mistakes` | Lesson 5 — Common Mistakes ⚑ | `_tutor/curriculum/05_common-mistakes.md` |
 | `06_install-first-use` | Lesson 6 — Install and First Use | `_tutor/curriculum/06_install-first-use.md` |
-| `07_in-practice` | Lesson 7 — Claude Code in Practice | `_tutor/curriculum/07_in-practice.md` |
-| `08_thinking-partner` | Lesson 8 — Claude Desktop as Thinking Partner | `_tutor/curriculum/08_thinking-partner.md` |
-| `09_understand-project` | Lesson 9 — Making Claude Understand Your Project | `_tutor/curriculum/09_understand-project.md` |
+| `07_in-practice` | Lesson 7 — Codex in Practice | `_tutor/curriculum/07_in-practice.md` |
+| `08_thinking-partner` | Lesson 8 — ChatGPT as Thinking Partner | `_tutor/curriculum/08_thinking-partner.md` |
+| `09_understand-project` | Lesson 9 — Making Codex Understand Your Project | `_tutor/curriculum/09_understand-project.md` |
 | `10_where-this-goes` | Lesson 10 — Where This Goes ⚑ | `_tutor/curriculum/10_where-this-goes.md` |
 | `11_path-from-here` | Lesson 11 — Your Path From Here | `_tutor/curriculum/11_path-from-here.md` |
 

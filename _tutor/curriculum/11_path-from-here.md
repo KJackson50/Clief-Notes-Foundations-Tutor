@@ -12,7 +12,7 @@ A clear picture of where to go next based on what you want to build.
 
 You finished The Foundation.
 
-You have tools installed (1.1), a folder system that gives Claude context (1.2), a prompting framework (1.3), six videos explaining the ideas underneath all of it (Section 2), the full folder architecture (Section 3), and Claude Code running on your machine (Section 4).
+You have tools installed (1.1), a folder system that gives ChatGPT context (1.2), a prompting framework (1.3), six videos explaining the ideas underneath all of it (Section 2), the full folder architecture (Section 3), and Codex running on your machine (Section 4).
 
 That is a working system. Everything from here builds on it.
 
@@ -22,9 +22,9 @@ Level 2 — Implementation Playbooks
 
 Unlock by engaging in the community. Hands-on courses where you build real projects.
 
-Building Animations The full pipeline for creating video animations with Claude Code and Remotion. Script to spec to build to render. Four lessons including a community challenge.
+Building Animations The full pipeline for creating video animations with Codex and Remotion. Script to spec to build to render. Four lessons including a community challenge.
 
-The Ultimate Browser (Claude Extension) Claude running inside Chrome. Pull data from any page, teach Claude your workflows, automate inbox and scheduling. Four lessons with real use cases.
+The Ultimate Browser (ChatGPT Extension) ChatGPT running inside Chrome. Pull data from any page, teach ChatGPT your workflows, automate inbox and scheduling. Four lessons with real use cases.
 
 
 
@@ -32,9 +32,9 @@ Level 3 — Building Your Stack
 
 For members who have built with Level 2 and want to push further.
 
-Custom UI for Claude (or Other AI) Build your own front-end interface for Claude. The build process, Claude Code in action, scoping your design, and open-source references to study.
+Custom UI for ChatGPT (or Other AI) Build your own front-end interface for ChatGPT. The build process, Codex in action, scoping your design, and open-source references to study.
 
-Remote Access for Claude Want to control your Claude Code on your Desktop from your phone? This course teaches you how.
+Remote Access for ChatGPT Want to control Codex on your computer from your phone? This course teaches you how.
 
 
 
@@ -51,7 +51,7 @@ Workspace Blueprint (full production folder template with routing tables and con
 
 
 
-Production CLAUDE.md examples for different use cases
+Production AGENTS.md examples for different use cases
 
 
 
@@ -71,7 +71,7 @@ Workflow starter packs (content pipeline, consulting, development)
 
 
 
-Claude Skills Manual + Resource Index
+ChatGPT Skills Manual + Resource Index
 
 
 
@@ -127,14 +127,14 @@ Keep learning for free → Go back through Sections 1-4 and do every check-in. E
 
 ## Build
 
-<!-- Runtime instructions for Claude — not prose delivered to the user -->
+<!-- Runtime instructions for Codex — not prose delivered to the user -->
 
 This is the final lesson. The build is a planning document — the user writes, in their own words, where they are going next.
 
 **Step 1: Take stock.**
 - Instruction: "Before we write anything — let's see what you've built across these 11 lessons. Tell me:
   - What's the folder structure you have now?
-  - What's one thing you understand about working with Claude that you didn't understand before?
+  - What's one thing you understand about working with ChatGPT that you didn't understand before?
   - What's one thing you'd build or do differently now compared to when you started?"
 
 - Listen to their answers. Acknowledge what they've accomplished.
@@ -164,7 +164,7 @@ Tell me when it's saved."
 
 ## Check-in
 
-<!-- Runtime instructions for Claude — FINAL GATE -->
+<!-- Runtime instructions for Codex — FINAL GATE -->
 
 1. Inspect `[user-named-folder]/path_forward.md` — verify it's written in their own words and answers all three questions with specifics.
 

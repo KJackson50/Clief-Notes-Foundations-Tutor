@@ -6,7 +6,7 @@
 
 What You'll Get From This
 
-A working folder system that tells Claude where it is, what to do, and where to put the work. Three layers. Plain English. No code, no frameworks, no agents.
+A working folder system that tells Codex where it is, what to do, and where to put the work. Three layers. Plain English. No code, no frameworks, no agents.
 
 
 
@@ -14,7 +14,7 @@ The Lesson
 
 The problem with how most people use AI
 
-Right now, most people open Claude or ChatGPT, type something, get a response, and start over. Maybe they save a good prompt somewhere and paste it in again next time. Maybe they hit the token limit and have to start a new conversation. Maybe they spend half the message just re-explaining who they are and what they are working on.
+Right now, most people open ChatGPT or Codex, type something, get a response, and start over. Maybe they save a good prompt somewhere and paste it in again next time. Maybe they hit the token limit and have to start a new conversation. Maybe they spend half the message just re-explaining who they are and what they are working on.
 
 That works for quick questions. It falls apart the moment you try to do real, ongoing work. You are burning tokens on stuff that does not matter. You cannot edit what the AI produces at each step. And every conversation starts from zero.
 
@@ -61,11 +61,11 @@ The three layer routing system
 
 This is the core of the whole thing. Three layers. Each one has a job.
 
-Layer 1: The Map (CLAUDE.md)
+Layer 1: The Map (AGENTS.md)
 
-This is the top-level file. It sits at the root of your project folder. Every time Claude enters this workspace, it reads this file first.
+This is the top-level file. It sits at the root of your project folder. Every time Codex enters this workspace, it reads this file first.
 
-Think of it as the floor plan. You walk into any building, the floor plan is on the wall, and you know where to go. The CLAUDE.md file tells the AI:
+Think of it as the floor plan. You walk into any building, the floor plan is on the wall, and you know where to go. The AGENTS.md file tells the AI:
 
 
 
@@ -93,7 +93,7 @@ Without this, the AI either reads everything and wastes tokens, guesses wrong ab
 <!-- From transcript: 3.1 transcript video.md -->
 Layer 2: The Rooms (Workspace Context Files)
 
-Each workspace has its own context file. When you tell Claude to work in the Writing Room, it reads the Writing Room context file. When you are in Production, it reads the Production context file. It only loads what it needs for where it is.
+Each workspace has its own context file. When you tell Codex to work in the Writing Room, it reads the Writing Room context file. When you are in Production, it reads the Production context file. It only loads what it needs for where it is.
 
 These context files describe:
 
@@ -114,29 +114,29 @@ What files are in here and how they are organized
 
 What skills or tools to use in this workspace
 
-You can write these by hand or have Claude help you write them. They are plain English. Short documents. A few paragraphs.
+You can write these by hand or have Codex help you write them. They are plain English. Short documents. A few paragraphs.
 
 You can see what happens with almost no prompting at all. You say "go to writing room, let's start making something" and the AI immediately reads the context file, understands the workspace, loads the right voice and style, and asks what you want to build. One prompt. That is the power of Layer 2.
 <!-- End transcript -->
 
 Layer 3: The Tools (Skills, MCP Servers, and Plug-and-Play)
 
-Layer 3 is where skills and tools live. Skills are processes that someone figured out and packaged into a set of files that tell Claude how to do a specific thing. A PowerPoint skill. A humanizer skill. A doc co-authoring skill.
+Layer 3 is where skills and tools live. Skills are processes that someone figured out and packaged into a set of files that tell Codex how to do a specific thing. A PowerPoint skill. A humanizer skill. A doc co-authoring skill.
 
 The key here: you do not load every skill into every workspace. You wire skills into the workspaces where they are needed. Your Production workspace might reference a front-end design skill and a web app testing skill. Your Writing Room might reference a humanizer skill and a doc co-authoring skill.
 
-You can reference 15, 20, or 100 skills in a project, but each workspace only loads the ones it needs. That is the plug-and-play idea. And if you need Claude to find a new skill or create one, you can wire that ability in too.
+You can reference 15, 20, or 100 skills in a project, but each workspace only loads the ones it needs. That is the plug-and-play idea. And if you need Codex to find a new skill or create one, you can wire that ability in too.
 
 
 
 <!-- From transcript: 3.1 transcript video.md -->
 Naming conventions that replace databases
 
-One more thing that makes this system work without any code or databases. In your CLAUDE.md, you add naming conventions.
+One more thing that makes this system work without any code or databases. In your AGENTS.md, you add naming conventions.
 
 If a blog draft is created, it gets named like: api-auth-guide_draft.md If it is a newsletter, it gets named like: 2026-03-launch-week.md If it is a demo script version 2, it gets named like: demo_v2.md
 
-The AI knows how to find, organize, and move files because the naming tells it everything. You can say "pull my demo v2 and build a spec from it" and Claude knows exactly where to look, what to pull, and what to do next. No SQL. No vector database. No Python injection. Just naming conventions.
+The AI knows how to find, organize, and move files because the naming tells it everything. You can say "pull my demo v2 and build a spec from it" and Codex knows exactly where to look, what to pull, and what to do next. No SQL. No vector database. No Python injection. Just naming conventions.
 
 The folder becomes your app. This is your UI. What simpler UI than a folder?
 <!-- End transcript -->
@@ -190,13 +190,13 @@ The three-layer routing system (map → rooms → tools) works the same way no m
 
 ## Build
 
-<!-- Runtime instructions for Claude — not prose delivered to the user -->
+<!-- Runtime instructions for Codex — not prose delivered to the user -->
 
 This is the densest lesson. Three sequential sub-builds. Run each one, do the mini check, then move to the next.
 
-**Sub-build 1 — The Map (CLAUDE.md)**
+**Sub-build 1 — The Map (AGENTS.md)**
 
-- Instruction: "Let's start with Layer 1 — the Map. You already have a CLAUDE.md from Lesson 1. We're going to update it to include a routing table. Open it. Here's the structure to add:
+- Instruction: "Let's start with Layer 1 — the Map. You already have an AGENTS.md from Lesson 1. We're going to update it to include a routing table. Open it. Here's the structure to add:
 
 ```
 # [Your Project Name]
@@ -218,7 +218,7 @@ This is the densest lesson. Three sequential sub-builds. Run each one, do the mi
 
 Replace the placeholders with your actual work areas. Tell me when it's saved."
 
-- Inspect: Read the updated CLAUDE.md. Confirm it has a routing table with at least one row and at least one workspace listed.
+- Inspect: Read the updated AGENTS.md. Confirm it has a routing table with at least one row and at least one workspace listed.
 - **Mini check:** "In your own words — what does the Map do? What would happen if it wasn't there?"
 
 **Sub-build 2 — A Room (one workspace folder + CONTEXT.md)**
@@ -245,7 +245,7 @@ Fill it in for your real work. Tell me when it's saved and give me the path."
 
 **Sub-build 3 — A Tool (Layer 3 example)**
 
-- Instruction: "Layer 3 is where skills and tools plug in. You don't need to wire anything in right now — but let's note where they'd go. In your CLAUDE.md routing table, add a Skills column. Even if it says '—' for now, the column should be there.
+- Instruction: "Layer 3 is where skills and tools plug in. You don't need to wire anything in right now — but let's note where they'd go. In your AGENTS.md routing table, add a Skills column. Even if it says '—' for now, the column should be there.
 
 | Task | Go to | Read | Skills |
 |------|-------|------|--------|
@@ -253,27 +253,27 @@ Fill it in for your real work. Tell me when it's saved and give me the path."
 
 Tell me when it's updated."
 
-- Inspect: Confirm the routing table in CLAUDE.md has a Skills column.
+- Inspect: Confirm the routing table in AGENTS.md has a Skills column.
 
 **Artifacts:**
-- `[user-named-folder]/CLAUDE.md` (updated with routing table)
+- `[user-named-folder]/AGENTS.md` (updated with routing table)
 - `[user-named-folder]/[workspace-name]/CONTEXT.md`
 
 ---
 
 ## Check-in
 
-<!-- Runtime instructions for Claude -->
+<!-- Runtime instructions for Codex -->
 
 1. Inspect both artifacts:
-   - `CLAUDE.md`: routing table present with at least one workspace row and a Skills column.
+   - `AGENTS.md`: routing table present with at least one workspace row and a Skills column.
    - `[workspace]/CONTEXT.md`: describes actual work, not placeholder text.
 
 2. Ask: "You've got Map, Room, and a placeholder for Tools. If you were going to actually use this for your real work starting tomorrow — what would you change or add first?"
 
 3. Record in `_tutor/progress.md`:
    - lesson: "03_full-walkthrough"
-   - artifacts_inspected: ["[path]/CLAUDE.md", "[path]/[workspace]/CONTEXT.md"]
+   - artifacts_inspected: ["[path]/AGENTS.md", "[path]/[workspace]/CONTEXT.md"]
    - comprehension.question: "You've got Map, Room, and a placeholder for Tools. If you were going to actually use this for your real work starting tomorrow — what would you change or add first?"
    - comprehension.answer: "[user's verbatim response]"
    - comprehension.pass: [true/false]
