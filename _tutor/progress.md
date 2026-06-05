@@ -1,4 +1,4 @@
-current_lesson: "03_full-walkthrough"
+current_lesson: "04_customize"
 lessons_completed:
   - lesson: "01_first-folder"
     completed_at: "2026-06-01T13:39:56Z"
@@ -15,5 +15,14 @@ lessons_completed:
     comprehension:
       question: "The next time you get a vague or unhelpful response from Codex — what's the first thing you'd check in your prompt?"
       answer: "I'd check the 5 big things. Identity, task, context, constraints, and output format"
+      pass: true
+  - lesson: "03_full-walkthrough"
+    completed_at: "2026-06-05T16:03:12Z"
+    artifacts_inspected:
+      - "workspace/2026-fitness-goals/AGENTS.md"
+      - "workspace/2026-fitness-goals/nutrition/CONTEXT.md"
+    comprehension:
+      question: "If you were setting this up for a different project tomorrow, what would you keep the same, and what would you change?"
+      answer: "I would do this exactly. I'd have this skeleton somewhere in an .md file saved as 'repo_start' so the LLM will know I I want my projects set up."
       pass: true
 notes: ""
